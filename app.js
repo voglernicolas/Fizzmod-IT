@@ -11,31 +11,6 @@
  * 
  */
 
-
-
-
-// Agregar el <!DOCTYPE> de html desde el JS, ¿por qué? no hay por qué
-var nodeDoctype = document.implementation.createDocumentType(
-    'html',
-    '-//W3C//DTD XHTML 1.0 Transitional//EN',
-    'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtdd'
-   );
-   if(document.doctype) {
-       document.replaceChild(nodeDoctype, document.doctype);
-   } else {
-       document.insertBefore(nodeDoctype, document.childNodes[0]);
-    }
-    
-
-    // Titulo pagina
-    document.title = "Puro JS";
-
-// Charset del head
-var meta = document.createElement("meta")
-meta.setAttribute("charset", "UTF-8")
-document.head.appendChild(meta)
-
-
 var div = document.createElement("div")
 var a = document.createElement("a");
 var node = document.createTextNode("¡Ir a Google!");
