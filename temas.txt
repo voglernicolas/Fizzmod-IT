@@ -1,0 +1,26 @@
+TP
+
+Crear una página que tenga como mínimo 3 vistas distintas sin contar el landing.
+
+Independientemente del contenido del sitio, tiene que haber como mínimo una entidad de datos principal que représente un conjunto superior (sobre lo que se trata el sitio) y por lo menos dos más secundarias (relacionadas a la entidad principal). Ej.: un sitio de películas podría tener películas como entidad principal, y categorías y autores como secundarias, relacionadas con la principal.
+
+En por lo menos una vista se tiene que poder ver un listado de productos.
+
+El listado de productos tiene que poder implementar un filtro de por lo menos dos conceptos a filtrar.
+
+El sitio tiene que poder implementar un sistema CRUD para por lo menos la entidad principal de datos. En el ejemplo anterior sería solo para dar de alta, baja y modificar las películas solamente.
+
+Tiene que haber un formulario en el sitio que separe sus campos en por lo menos tres pestañas con la posibilidad de volver a una pestaña anterior o avanzar a la siguiente, pudiendo editar datos ya ingresados.
+
+El sitio tiene que implementar redux como sistema de manejo de datos.
+
+El sitio tiene que poder mostrar una notificación en pantalla que se oculte sola luego de 3 segundos por defecto. Esto se tiene que elaborar en un componente aparte con la posibilidad de configurar el componente pasándole props para sobrescribir el tiempo de duración, el mensaje y la clase de HTML. La clase la vamos a utilizar para darle un color de fondo en la hoja de estilos posteriormente.
+
+Cada unidad de dato de la entidad elegida como principal tiene que tener una vista única con todo el detalle adicional que no se muestre en el catálogo/listado.
+
+Cada unidad de dato de cada entidad secundaria tiene que tener una vista única con por lo menos un campo de detalle (además de su id) el cual podemos consultar en su vista principal y no en el listado de la misma, si hubiera. En caso de no haber, se debe poder dirigir al usuario a esta vista desde un evento click sobre el nombre de la categoría en la vista de detalle de la entidad de principal.
+
+Elaborar un módulo adicional que no se haya mencionado antes como módulo de creatividad.
+
+Aunque sea un componente tiene que estar maquetado de acuerdo a los principios de material design. Mencionar cuál fue y justificar la realización del mismo.
+
